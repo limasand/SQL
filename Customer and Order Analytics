@@ -1,0 +1,21 @@
+SELECT * FROM BIT_DB.customers ;
+
+/* How many orders were placed in January? */
+SELECT * FROM BIT_DB.JanSales;
+
+SELECT count(product)
+FROM BIT_DB.JanSales;
+
+/* How many of those orders were for an iPhone? */
+SELECT count(product)
+FROM BIT_DB.JanSales
+WHERE product= 'iPhone';
+
+/*Select the customer account numbers for all the orders that were placed in February. */
+SELECT * FROM BIT_DB.FebSales;
+SELECT * FROM BIT_DB.customers;
+SELECT acctnum
+FROM BIT_DB.customers cust
+    INNER JOIN BIT_DB.FebSales feb ON cust.order_id = feb.orderid;
+
+/* Which product was the cheapest one sold in January, and what was the price? */
