@@ -1,4 +1,4 @@
-# I am querying employment in the City of San Fransisco
+#In this SQL, I'm querying a database to analyze data about employment in San Fransisco.
 
 #1 /*Number of employee names in table vs number of distinct employee names */
 SELECT COUNT(EmployeeName),
